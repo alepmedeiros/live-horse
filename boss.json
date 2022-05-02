@@ -1,0 +1,14 @@
+{
+	"name": "livehashload",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/horse": "^3.0.1",
+		"github.com/hashload/jhonson": "^1.1.4",
+		"https://github.com/bittencourtthulio/horse-etag": "^1.0.2",
+		"https://github.com/bittencourtthulio/horse-paginate": "^1.0.0"
+	}
+}
