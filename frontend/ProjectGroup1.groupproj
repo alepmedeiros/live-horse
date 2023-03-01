@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B1B0F12E-3C8A-44D9-9EEC-EFB3B2890CCB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ListagemLive.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\ProjectHorseSimpleORM\ServidorHorse.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ListagemLive">
+        <MSBuild Projects="ListagemLive.dproj"/>
+    </Target>
+    <Target Name="ListagemLive:Clean">
+        <MSBuild Projects="ListagemLive.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ListagemLive:Make">
+        <MSBuild Projects="ListagemLive.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ServidorHorse">
+        <MSBuild Projects="..\..\ProjectHorseSimpleORM\ServidorHorse.dproj"/>
+    </Target>
+    <Target Name="ServidorHorse:Clean">
+        <MSBuild Projects="..\..\ProjectHorseSimpleORM\ServidorHorse.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ServidorHorse:Make">
+        <MSBuild Projects="..\..\ProjectHorseSimpleORM\ServidorHorse.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ListagemLive;ServidorHorse"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ListagemLive:Clean;ServidorHorse:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ListagemLive:Make;ServidorHorse:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

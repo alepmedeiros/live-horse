@@ -29,7 +29,15 @@
 		"https://github.com/bittencourtthulio/horse-paginate": {
 			"name": "horse-paginate",
 			"version": "1.0.0",
-			"hash": "e8b42fe6655e9cdc45ab1e6d593a1caf",
+			"hash": "c755f8270751f99ce60a19c128af9971",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		},
+		"https://github.com/gabrielbaltazar/gbjson": {
+			"name": "gbjson",
+			"version": "1.0.10",
+			"hash": "e3b3e50212b8d5417f63aad438550798",
 			"artifacts": {},
 			"failed": false,
 			"changed": false

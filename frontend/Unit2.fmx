@@ -1,0 +1,99 @@
+object FrameCustomers: TFrameCustomers
+  Size.Width = 400.000000000000000000
+  Size.Height = 75.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 400.000000000000000000
+    Size.Height = 75.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Padding.Left = 10.000000000000000000
+      Padding.Top = 10.000000000000000000
+      Padding.Right = 10.000000000000000000
+      Padding.Bottom = 10.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Size.Width = 390.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object Layout3: TLayout
+        Align = Client
+        Size.Width = 370.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Layout4: TLayout
+          Align = Left
+          Size.Width = 57.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label1: TLabel
+            Align = Top
+            StyledSettings = [FontColor]
+            Size.Width = 57.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Roboto'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'C'#243'digo'
+            TabOrder = 0
+          end
+          object Label2: TLabel
+            Align = Client
+            StyledSettings = [FontColor]
+            Size.Width = 57.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Roboto'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            Text = 'Nome'
+            TabOrder = 1
+          end
+        end
+        object Layout5: TLayout
+          Align = Client
+          Size.Width = 313.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object lblCodigo: TLabel
+            Align = Top
+            StyledSettings = [Style, FontColor]
+            Size.Width = 313.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Roboto'
+            Text = 'lblCodigo'
+            TabOrder = 0
+          end
+          object lblNome: TLabel
+            Align = Client
+            StyledSettings = [Style, FontColor]
+            Size.Width = 313.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Roboto'
+            Text = 'lblNome'
+            TabOrder = 1
+          end
+        end
+      end
+    end
+    object ShadowEffect1: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 0.200000002980232200
+      ShadowColor = claBlack
+    end
+  end
+end

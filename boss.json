@@ -9,6 +9,7 @@
 		"github.com/hashload/horse": "^3.0.1",
 		"github.com/hashload/jhonson": "^1.1.4",
 		"https://github.com/bittencourtthulio/horse-etag": "^1.0.2",
-		"https://github.com/bittencourtthulio/horse-paginate": "^1.0.0"
+		"https://github.com/bittencourtthulio/horse-paginate": "^1.0.0",
+		"https://github.com/gabrielbaltazar/gbjson": "^1.0.10"
 	}
 }

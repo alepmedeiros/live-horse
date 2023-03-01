@@ -7,9 +7,17 @@ program livehorse;
 uses
   Horse,
   Horse.Jhonson,
-  System.SysUtils;
+  Horse.Paginate,
+  System.SysUtils,
+  livehorse.connection.interfaces in 'src\livehorse.connection.interfaces.pas',
+  livehorse.connection in 'src\livehorse.connection.pas',
+  livehorse.query in 'src\livehorse.query.pas',
+  livehorse.DAOGeneric in 'src\livehorse.DAOGeneric.pas';
 
 begin
-  Writeln('aguardando');
-  readln;
+  THorse
+  .Use(Paginate)
+    .Use(Jhonson);
+
+  THorse.Listen(9000);
 end.
